@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/register_styles.css" />
+    <title>Register</title>
+  </head>
+
+  <body>
+    <div class="register-form">
+      <h1>Lets Get You Setup With the Speed Of Lightning</h1>
+      <form
+        action="/register"
+        method="POST"
+        enctype="multipart/form-data"
+        class="register-form-content"
+      >
+        <div class="x">
+          <img
+            src="/images/blank-profile-picture-973460_640.png"
+            alt=" "
+            class="dp"
+          />
+
+          <div class="file-wrapper">
+            <i class="fas fa-user-circle"></i>
+            <input
+              type="file"
+              id="dp-file"
+              style="display: none"
+              name="myimage"
+            />
+            <p style="margin-top: 5px">Profile Picture</p>
+          </div>
+        </div>
+
+        <div class="form-div">
+          <p>First Name</p>
+          <input
+            type="text"
+            name="firstname"
+            id=""
+            placeholder="Enter Your First Name"
+          />
+        </div>
+
+        <div class="form-div">
+          <p>Last Name</p>
+          <input
+            type="text"
+            name="lastname"
+            id=""
+            placeholder="Enter Your Last Name"
+          />
+        </div>
+
+        <div class="form-div">
+          <p>Email</p>
+          <input
+            type="email"
+            name="username"
+            id=""
+            placeholder="Enter Your Email"
+          />
+        </div>
+
+        <div class="form-div">
+          <p>Password</p>
+          <input
+            type="password"
+            name="password"
+            id=""
+            placeholder="Enter Your Password"
+          />
+        </div>
+        <div class="form-div">
+          <p>Gender</p>
+          <select name="gender" id="cars">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-div">
+          <p>Age</p>
+          <input
+            type="number"
+            name="age"
+            id=""
+            placeholder="Enter Your First Age"
+          />
+        </div>
+
+        <div>
+          <h2>Technical Qualification (Fill All Three)</h2>
+          <div class="form-div">
+            <p>1</p>
+            <input
+              type="text"
+              name="tqual1"
+              id=""
+              placeholder="Enter Your Technical Qualification (1)"
+            />
+          </div>
+          <div class="form-div">
+            <p>2</p>
+            <input
+              type="text"
+              name="tqual2"
+              id=""
+              placeholder="Enter Your Technical Qualification (2)"
+            />
+          </div>
+          <div class="form-div">
+            <p>3</p>
+            <input
+              type="text"
+              name="tqual3"
+              id=""
+              placeholder="Enter Your Technical Qualification (3)"
+            />
+          </div>
+        </div>
+
+        <h2>Technical Interest</h2>
+
+        <div class="checkboxes">
+          <label class="label-box">
+            <input
+              type="checkbox"
+              name="frontdevelopment"
+              value="Front-End Develoment"
+            />
+            <p>Front-End Develoment</p>
+          </label>
+
+          <label class="label-box">
+            <input
+              type="checkbox"
+              name="backdevelopment"
+              value="Back-End Develoment"
+            />
+            <p>Back-End Develoment</p>
+          </label>
+
+          <label class="label-box">
+            <input type="checkbox" name="javascript" value="JavaScript" />
+            <p>JavaScript Expert</p>
+          </label>
+
+          <label class="label-box">
+            <input type="checkbox" name="testing" value="Testing" />
+            <p>Testing</p>
+          </label>
+
+          <label class="label-box">
+            <input type="checkbox" name="node" value="Node.js Developer" />
+            <p>Node.js Developer</p>
+          </label>
+          <label class="label-box">
+            <input type="checkbox" name="react" value="React" />
+            <p>React</p>
+          </label>
+
+          <label class="label-box">
+            <input type="checkbox" name="ai" value="AI/ML" />
+            <p>AI/ML</p>
+          </label>
+
+          <label class="label-box">
+            <input type="checkbox" name="dataScience" value="Data Science" />
+            <p>Data Science</p>
+          </label>
+
+          <label class="label-box">
+            <input
+              type="checkbox"
+              name="softengineer"
+              value="Software Engineer"
+            />
+            <p>Software Engineer</p>
+          </label>
+
+          <label class="label-box">
+            <input type="checkbox" name="flutter" value="Flutter" />
+            <p>Flutter</p>
+          </label>
+        </div>
+
+        <h2 style="margin-top: 40px">Your Bio</h2>
+        <textarea
+          name="bio"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Tell People Something About Yourself"
+        ></textarea>
+
+        <button type="submit" class="register-button">REGISTER</button>
+      </form>
+    </div>
+
+    <script
+      src=" https://kit.fontawesome.com/2ef8b01e76.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var inputFile = document.getElementById('dp-file');
+      var fileWrapper = document.querySelectorAll('div')[1];
+      fileWrapper.addEventListener('click', function () {
+        inputFile.click();
+      });
+
+      inputFile.addEventListener('change', function () {
+        const file = this.files[0];
+        var reader = new FileReader();
+        reader.onload = function () {
+          const result = reader.result;
+          document.querySelector('img').setAttribute('src', result);
+        };
+        reader.readAsDataURL(file);
+      });
+    </script>
+  </body>
+</html>

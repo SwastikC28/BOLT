@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
+body {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 15%;
+  background-color: transparent;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 3em;
+  margin: 0px;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+}
+nav li {
+  margin-left: 50px;
+  letter-spacing: 2px;
+  list-style-type: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  padding: 2% 10%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  width: 50%;
+
+  border: 20px solid white;
+}
+
+.content p {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.img-div {
+  width: 100%;
+}
+
+.bg-img {
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  filter: blur(6px);
+}
+
+/* Type Writer Effect */
+
+.container {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container p {
+  font-size: 3em;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  margin: 0px;
+}
+
+.typed-text {
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+}
+
+.cursor {
+  display: inline-block;
+  width: 6px;
+  font-size: 90px;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  animation: blink 1s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    background-color: white;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+.i1 {
+  position: absolute;
+
+  height: 900px;
+  width: 100%;
+  opacity: 0.09;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Footer Above Buttons */
+
+.bottom-buttons {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 70px;
+
+  justify-content: space-between;
+}
+.bottom-buttons button {
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+
+  text-transform: capitalize;
+  height: 70px;
+  box-shadow: grey 2px 2px 2px;
+  background-color: #9db3cf;
+  color: rgb(82, 80, 80);
+  width: 300px;
+  border-radius: 8px;
+  border: 0px solid;
+}
+
+.bottom-buttons button:hover {
+  background-color: rgb(253, 253, 253);
+  color: rgb(64, 126, 240);
+  font-weight: bolder;
+}
+
+.bottom-buttons button:focus {
+  border: 0px solid black;
+  border-radius: 10px;
+}

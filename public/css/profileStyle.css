@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #516495;
+  padding: 0% 10%;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+}
+.nav-bar {
+  background-color: #516495;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+.nav-bar h1 {
+  color: white;
+  font-size: 4em;
+  font-family: 'Kaushan Script', cursive;
+  color: rgb(207, 207, 17);
+  font-weight: bolder;
+  margin: 10px;
+  margin-right: 800px;
+}
+
+.links {
+  display: flex;
+  width: 17%;
+  justify-content: space-between;
+}
+
+.nav-bar h2 {
+  color: white;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-bar a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.links a::after {
+  content: '';
+  margin-top: 2px;
+  height: 2px;
+  width: 0%;
+  display: block;
+  background-color: rgb(255, 255, 255);
+}
+
+.links a:hover::after {
+  width: 100%;
+  transition: all 0.5s ease-in;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+button {
+  font-size: 1.5em;
+  width: 200px;
+  color: #516495;
+  padding: 8px 0;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 0px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+.services button:hover {
+  color: rgb(250, 199, 103);
+}
+
+.profile-content {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.profile-content img {
+  margin-right: 200px;
+  border-radius: 30px;
+  height: 20em;
+  width: 25%;
+
+  border: 5px white;
+  border-style: outset;
+}
+
+.profile-content h1 {
+  margin-top: 0px;
+  text-shadow: 2px 10px 15px black;
+  font-size: 3em;
+}
+
+.profile-content p {
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+.profile-content > div {
+  margin-right: 200px;
+  min-width: 500px;
+}
+
+.tech-quals h2 {
+  color: white;
+  font-size: 2.5em;
+}
+.tech-quals li {
+  font-size: 25px;
+  list-style: none;
+  margin-top: 5px;
+  color: white;
+}
+.interests {
+  margin-bottom: 100px;
+}
+.interests h2 {
+  color: white;
+  font-size: 2.5em;
+}
+
+.interests img {
+  width: 100%;
+}
+
+.footer button {
+  font-size: 1.5em;
+  width: 200px;
+  height: 60px;
+  display: block;
+  color: grey;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 0px;
+}
+
+.footer button:hover {
+  color: rgb(231, 87, 87);
+}
+.footer p {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.info h3 {
+  font-weight: 200;
+}

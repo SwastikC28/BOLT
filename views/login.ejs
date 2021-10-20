@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Landing Page</title>
+  </head>
+
+  <body>
+    <nav class="nav-bar">
+      <h1>BOLT</h1>
+      <a href="/register" class="sign-up">SIGN UP</a>
+    </nav>
+
+    <div class="content">
+      <div class="welcome-text">
+        <h1 style="font-size: 4em; font-weight: bolder">Welcome Back</h1>
+        <p style="text-align: center">
+          Lets Get you Logged in so that you can find and progress with your
+          friends with a speed of
+        </p>
+        <i class="fas fa-bolt x"></i>
+      </div>
+
+      <div class="login">
+        <h1>SIGN IN</h1>
+        <form action="/login" method="POST">
+          <div class="input-flex">
+            <i class="fas fa-envelope"></i>
+
+            <input
+              class="login-input"
+              type="text"
+              name="username"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="input-flex">
+            <i class="fas fa-unlock-alt"></i>
+            <input
+              class="login-input"
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <button class="login-button" type="submit">LOGIN</button>
+        </form>
+      </div>
+
+      <div class="bg-clr"></div>
+    </div>
+
+    <div class="img-style">
+      <img
+        class="bg-img"
+        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F0%2F0%2F9%2F146966.jpg&f=1&nofb=1');"
+        alt=""
+      />
+    </div>
+    <script
+      src="https://kit.fontawesome.com/2ef8b01e76.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

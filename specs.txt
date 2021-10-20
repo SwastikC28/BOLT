@@ -1,0 +1,4 @@
+1. Edit profile
+2. Login Pass Validation -- Done
+3. signup validation
+4. Favourite List

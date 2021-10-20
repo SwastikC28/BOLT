@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <img src="../public/images/logo.png" alt="Bolt-Logo" class="bolt">
+    </nav>
+
+    <hr>
+    <div class="content">
+        <div class="welcome-text">
+            <h1>Welcome Back</h1>
+            <p style="text-align: center;">Lets Get you Logged in so that you can find and progress with your friends
+                with a speed of
+            </p>
+            <i class="fas fa-bolt x"></i>
+            <b>
+                <p>Or Login with</p>
+            </b>
+            <div class="login-options"> <i class="fab fa-google " style="color: white;"></i>
+                <i class="fab fa-facebook-square" style="color: white;"></i>
+            </div>
+        </div>
+        <div class="login">
+            <h1>SIGN IN</h1>
+
+            <form action="/login" method="POST">
+                <div class="input-flex">
+                    <i class="fas fa-envelope"></i>
+
+                    <input class="login-input" type="text" name="username" placeholder="Email">
+                </div>
+                <div class="input-flex">
+                    <i class="fas fa-unlock-alt"></i>
+                    <input class="login-input" type="password" name="password" placeholder="Password">
+                </div>
+
+                <button class="login-button" type="submit">LOGIN</button>
+            </form>
+
+        </div>
+
+
+    </div>
+
+    <a href="/register"><button class="sign-up">SIGN UP</button></a>
+
+    <script src="https://kit.fontawesome.com/2ef8b01e76.js" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

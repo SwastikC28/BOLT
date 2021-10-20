@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>BOLT</h1>
+      <ul>
+        <li><a href="/login">LOGIN</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="container">
+        <p>
+          <span class="typed-text"></span>
+          <span class="cursor typing">&nbsp</span>
+        </p>
+      </div>
+      <p>Tired of Working Alone ?</p>
+
+      <p>Looking for people similar like you to work with ?</p>
+
+      <p>
+        We have Got You Covered. Get Easily Matched With People and Start
+        Working.
+      </p>
+      <p style="font-size: 3em">So What are you waiting for?</p>
+    </div>
+
+    <div class="img-div">
+      <img
+        class="bg-img"
+        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F1%2F16%2FNj9FkW.jpg&f=1&nofb=1"
+        alt=""
+      />
+    </div>
+
+    <div class="bottom-buttons">
+      <button>ABOUT</button>
+      <a href="/register"><button>SIGN UP</button></a>
+    </div>
+    <script>
+      const typedTextSpan = document.querySelector('.typed-text');
+
+      const textArray = ['HAVE FUN', 'MEET PEOPLE', 'DISCOVER', 'PROGRESS ⟲'];
+      const typingDelay = 100;
+      const erasingDelay = 100;
+      const newTextDelay = 1000;
+      let textArrayIndex = 0;
+      let charIndex = 0;
+
+      function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+          typedTextSpan.textContent +=
+            textArray[textArrayIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(type, typingDelay);
+        } else {
+          setTimeout(erase, newTextDelay);
+        }
+      }
+
+      function erase() {
+        if (charIndex > 0) {
+          typedTextSpan.textContent = textArray[textArrayIndex].substring(
+            0,
+            charIndex - 1
+          );
+          charIndex--;
+          setTimeout(erase, erasingDelay);
+        } else {
+          //type
+          textArrayIndex++;
+          if (textArrayIndex >= textArray.length) {
+            textArrayIndex = 0;
+          }
+          setTimeout(type, typingDelay + 1100);
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(type, newTextDelay + 250);
+      });
+    </script>
+  </body>
+</html>

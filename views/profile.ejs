@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/profileStyle.css">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <h1>BOLT</h1>
+        
+        <div class="links">
+            <h2><a href="/home">HOME</a></h2>
+        <h2><a href="/profile">PROFILE</a></h2>
+        </div>
+    </nav>
+
+    <div class="services">
+
+        <a href="/logout"> <button> LOGOUT</button></a>
+    </div>
+
+    <div class="profile-content">
+
+        <img src="./Uploads/<%=user.imgName%>" alt="Charlie Puth">
+
+        <div>
+            <div>
+                <h1>
+                    <%=user.firstName%>
+                        <%=user.lastName%>
+
+                </h1>
+                <p>
+                    <%=user.bio%>
+                </p>
+
+                <hr>
+            </div>
+
+            <div class="info">
+                <h3>Name : <%=user.firstName%>
+                        <%=user.lastName%>
+
+                </h3>
+                <h3>Email : <%=user.username%>
+                </h3>
+                <h3>Gender : <%=user.gender%>
+                </h3>
+                <h3>Age : <%=user.age%>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="tech-quals">
+        <h2>Technical Qualification</h2>
+        <ul>
+            <% for(var i=0;i<user.tQualification.length;i++){ %>
+                <li>
+                    <%=user.tQualification[i]%>
+                </li>
+                <% }%>
+        </ul>
+    </div>
+
+
+    <div class="interests">
+        <h2>Interest</h2>
+        <div class="tech-quals">
+
+            <ul>
+                <% for(var i=0;i<user.tInterest.length;i++){ %>
+                    <li>
+                        <%=user.tInterest[i]%>
+                    </li>
+                    <% }%>
+            </ul>
+        </div>
+    </div>
+</body>
+
+
+<div class="footer">
+    <!-- <a href="edit"><button>EDIT</button></a> -->
+    <a href="/delete"><button>DELETE</button></a>
+    <p>Note: Clicking this button will delete your account permanently</p>
+</div>
+
+</html>

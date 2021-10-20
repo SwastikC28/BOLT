@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body {
+  padding: 0px;
+  margin: 0px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(231, 231, 231);
+}
+
+.nav-bar {
+  padding: 0% 10%;
+  background-color: #516495;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+.nav-bar h1 {
+  color: white;
+  font-size: 4em;
+  color: rgb(207, 207, 17);
+
+  font-weight: bolder;
+  margin: 10px;
+  margin-right: 800px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.links {
+  display: flex;
+  width: 17%;
+  justify-content: space-between;
+}
+
+.nav-bar h2 {
+  color: white;
+  font-size: 1.2em;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-bar a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.links a::after {
+  content: '';
+  margin-top: 2px;
+  height: 3px;
+  width: 0%;
+  display: block;
+  background-color: rgb(255, 255, 255);
+}
+
+.links a:hover::after {
+  width: 100%;
+  transition: all 0.5s ease-in;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+button {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+
+  height: 40px;
+  width: 140px;
+  color: #516495;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.main-div {
+  padding: 1% 11%;
+
+  color: #7692da;
+}
+
+.profile-content {
+  color: #5180f8;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.profile-content img {
+  margin-right: 200px;
+  border-radius: 30px;
+  height: 500px;
+  width: 500px;
+  border: 5px white;
+  border-style: outset;
+}
+
+.profile-content h1 {
+  margin-top: 0px;
+  font-size: 4em;
+  margin: 0;
+}
+
+.profile-content p {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.profile-content h3 {
+  font-weight: 600;
+}
+
+.tech-quals h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+.tech-quals li {
+  font-size: 1.5em;
+  font-weight: 600;
+  list-style: none;
+  margin-top: 5px;
+}
+.interests {
+  margin-bottom: 50px;
+}
+.interests h2 {
+  font-size: 2.5em;
+}
+
+.interests img {
+  width: 100%;
+}
+
+hr {
+  height: 2.5px;
+  background-color: rgb(106, 106, 241);
+  border: 0 solid white;
+}

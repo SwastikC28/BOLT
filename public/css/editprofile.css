@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #516495;
+  padding: 0.5% 10%;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 3%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-bar img {
+  height: 120px;
+  margin-right: auto;
+}
+
+.nav-bar h2 {
+  margin-left: 4%;
+  color: white;
+}
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-bar a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  font-size: 1.5em;
+  height: 40px;
+  width: 140px;
+  color: #516495;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.profile-content {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-right: 115px;
+}
+
+.profile-content img {
+  margin-right: 125px;
+  border-radius: 30px;
+  height: auto;
+  width: 30%;
+  border: 5px white;
+  border-style: outset;
+}
+
+.profile-info {
+  margin-right: 200px;
+}
+
+.profile-info > div > input {
+  height: 50px;
+  display: block;
+  width: 700px;
+  font-size: 2.5em;
+  padding: 1%;
+}
+
+.profile-info > div > textarea {
+  height: 100px;
+  display: block;
+  width: 100%;
+  font-size: 1.5em;
+  margin-top: 30px;
+  padding: 1%;
+}
+
+.profile-info-2 input {
+  height: 30px;
+  font-size: 1em;
+  padding: 1%;
+  width: 400px;
+}
+
+.profile-info-2 select {
+  height: 30px;
+  width: 50%;
+  margin-left: 10px;
+  display: inline;
+}
+
+.profile-info-2 tr {
+  padding: 0px;
+  font-size: 1.2em;
+}
+
+.tech-qual {
+  color: white;
+  margin-bottom: 100px;
+}
+
+.tech-qual h1 {
+  color: white;
+  font-size: 2.5em;
+}
+
+.tech-qual input {
+  font-size: 1.4em;
+  width: 500px;
+  height: 50px;
+}
+
+.tech-interest {
+  background-color: white;
+  color: #516495;
+  padding: 0.5% 1%;
+  margin-bottom: 100px;
+}
+
+.tech-interest h1 {
+  margin: 0px;
+  font-size: 2.5em;
+}
+
+.label-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.label-box p {
+  margin-left: 20px;
+}
+.footer button {
+  font-size: 2em;
+  width: 200px;
+  height: 60px;
+  display: block;
+
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}

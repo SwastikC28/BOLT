@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/register_styles.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="register-form">
+        <h1>Lets Get You Setup</h1>
+        <form class="register-form-content">
+            <div class="form-div">
+                <p>First Name</p>
+                <input type="text" name="firstname" id="">
+            </div>
+
+            <div class="form-div">
+                <p>Last Name</p>
+                <input type="text" name="lastname" id="">
+            </div>
+
+            <div class="form-div">
+                <p>Email</p>
+                <input type="email" name="username" id="">
+            </div>
+
+            <div class="form-div">
+                <p>Password</p>
+                <input type="password" name="password" id="">
+            </div>
+            <div class="form-div">
+                <p>Gender</p>
+                <select name="gender" id="cars">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-div">
+                <p>Age</p>
+                <input type="number" name="age" id="">
+            </div>
+
+
+            <div>
+                <h2>Technical Qualification (Fill All Three)</h2>
+                <div class="form-div">
+                    <p>1</p>
+                    <input type="number" name="age" id="">
+                </div>
+                <div class="form-div">
+                    <p>2</p>
+                    <input type="number" name="age" id="">
+                </div>
+                <div class="form-div">
+                    <p>3</p>
+                    <input type="number" name="age" id="">
+                </div>
+            </div>
+
+            <h2>Technical Interest</h2>
+
+            <div class="tech-control">
+                <label class="label-box">
+                    <input type="checkbox" name="html" value="HTML">
+                    <p>HTML</p>
+                </label>
+
+                <label class="label-box">
+                    <input type="checkbox" name="css" value="CSS">
+                    <p>CSS</p>
+                </label>
+
+                <label class="label-box">
+                    <input type="checkbox" name="javascript" value="JavaScript">
+                    <p>JavaScript</p>
+                </label>
+
+                <label class="label-box">
+                    <input type="checkbox" name="node" value="Node.js">
+                    <p>Node.js</p>
+                </label>
+
+                <label class="label-box">
+                    <input type="checkbox" name="react" value="React">
+                    <p>React.js</p>
+                </label>
+
+                <label class="label-box">
+                    <input type="checkbox" name="ai" value="AI/ML">
+                    <p>AI/ML</p>
+                </label>
+
+                <label class="label-box">
+                    <input type="checkbox" name="dataScience" value="Data Science">
+                    <p>Data Science</p>
+                </label>
+            </div>
+
+            <h2 style="margin-top: 40px;">Your Bio</h2>
+            <textarea name="bio" id="" cols="30" rows="10"></textarea>
+
+            <button type="submit" class="register-button">REGISTER</button>
+        </form>
+    </div>
+</body>
+
+</html>

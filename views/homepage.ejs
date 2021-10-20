@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/homepage.css">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <h1>BOLT</h1>
+        
+        <div class="links">
+            <h2><a href="/home">HOME</a></h2>
+        <h2><a href="/profile">PROFILE</a></h2>
+        </div>
+    </nav>
+
+    <h1>Here Are Some Potential Matches For You</h1>
+
+
+    <div class="list-users">
+        <h2>
+            <%= user.length%> Users
+        </h2>
+
+        <hr>
+    </div>
+    <div class="main">
+        <%for(var i=0;i<user.length; i++){%>
+            <div class="user">
+                <div class="content">
+                    <img src="./Uploads/<%=user[i].imgName%>" alt="Profile Picture">
+                    <div>
+
+                        <h1>
+                            <%=user[i].firstName%>
+                                <%=user[i].lastName%>
+                        </h1>
+                        <h3><%=user[i].age%> , <%=user[i].gender%>
+                        </h3>
+                      
+                    </div>
+                </div>
+
+             
+                <div class="read-more-class">
+                    <a href="/users/<%=user[i]._id%> " >More</a>
+                </div>
+            </div>
+            <% }%>
+
+
+    </div>
+</body>
+
+</html>
